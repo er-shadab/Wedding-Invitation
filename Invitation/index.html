@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Shadab &amp; Ronak — Wedding Invitation</title>
+  <meta name="description"
+    content="You are cordially invited to the Nikkah Ceremony of Shadab &amp; Ronak. Join us for an evening of love, laughter, and duas.">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:title" content="Shadab &amp; Ronak — Wedding Invitation">
+  <meta property="og:description"
+    content="Nikkah Ceremony · Monday, 26 October 2026 · Royal Banquets And Lawns, Pakwara, Uttar Pradesh 244102">
+  <meta property="og:image" content="img/pearl.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Great+Vibes&family=Jost:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="locked paper-grain">
+
+  <!-- ============================================================
+       ENVELOPE SCREEN (Press & Hold Opening Ritual)
+       ============================================================ -->
+  <div id="envelope-screen">
+    <p class="guest-line script" id="guest-line">You are cordially invited</p>
+
+    <div class="envelope" id="envelope" role="button" aria-label="Press and hold the wax seal to open invitation"
+      tabindex="0">
+      <div class="env-shadow"></div>
+      <div class="env-back"></div>
+      <div class="env-inner"></div>
+
+      <!-- Letter card that slides up -->
+      <div class="env-card">
+        <div class="mono js-mono">S · R</div>
+        <span class="env-sub">Nikkah Ceremony</span>
+        <div class="rule"></div>
+      </div>
+
+      <!-- Envelope folded flaps with floral embossing -->
+      <div class="env-pocket"></div>
+      <div class="env-emboss"></div>
+      <div class="env-flap"></div>
+
+      <!-- Wax Seal in center -->
+      <div class="wax" id="wax">
+        <div class="glow"></div>
+        <div class="press-ring"></div>
+        <div class="press-fill" id="press-fill"></div>
+        <svg viewBox="0 0 100 100" aria-hidden="true">
+          <defs>
+            <radialGradient id="waxg" cx="36%" cy="30%" r="80%">
+              <stop offset="0%" stop-color="#E8DCBE" />
+              <stop offset="58%" stop-color="#C5AF81" />
+              <stop offset="100%" stop-color="#9A8250" />
+            </radialGradient>
+            <radialGradient id="waxhi" cx="32%" cy="26%" r="45%">
+              <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.6" />
+              <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0" />
+            </radialGradient>
+            <filter id="waxb" x="-20%" y="-20%" width="140%" height="140%">
+              <feGaussianBlur stdDeviation="1.2" />
+            </filter>
+          </defs>
+          <!-- Organic wax seal shape -->
+          <path
+            d="M50 3 C61 7 70 1 79 9 C90 15 97 27 95 40 C100 53 96 67 87 77 C80 91 65 97 51 96 C37 98 24 92 15 82 C5 72 1 58 5 45 C2 31 9 17 20 10 C29 2 40 6 50 3 Z"
+            fill="url(#waxg)" />
+          <path
+            d="M50 12 C58 15 65 11 72 17 C81 22 86 31 85 41 C89 51 86 62 79 70 C73 81 62 86 51 85 C40 87 30 82 23 74 C15 66 12 55 15 45 C13 34 18 23 27 18 C34 12 43 14 50 12 Z"
+            fill="none" stroke="var(--gold-soft)" stroke-width="0.8" opacity="0.6" filter="url(#waxb)" />
+          <ellipse cx="38" cy="30" rx="16" ry="9" fill="url(#waxhi)" />
+          <!-- Calligraphy Monogram DA -->
+          <text id="wax-mono-text" x="50" y="58" text-anchor="middle" font-family="'Great Vibes', cursive"
+            font-size="32" fill="#FDF7EA" letter-spacing="1"
+            style="filter: drop-shadow(0 1px 1px rgba(0,0,0,0.45));">SR</text>
+        </svg>
+      </div>
+    </div>
+
+    <p class="tap-hint">Press &amp; hold the seal</p>
+    <p class="env-hold-note">Keep holding…</p>
+  </div>
+
+  <!-- ============================================================
+       HERO / FIRST SCREEN (Matching Reference Video)
+       ============================================================ -->
+  <header id="hero">
+    <video id="hero-video" class="hero-video" src="video/pearl.mp4" poster="img/pearl.jpg" muted loop playsinline
+      autoplay preload="auto" aria-hidden="true"></video>
+    <div class="hero-scrim"></div>
+
+    <div class="hero-overlay">
+      <div style="--i:0" class="stagger hero-mono-mini js-mono">SR</div>
+      <p style="--i:1" class="stagger hero-intro">Welcome to the</p>
+      <h2 style="--i:2" class="stagger hero-ceremony">Nikkah Ceremony</h2>
+      <div style="--i:3" class="stagger hero-of">of</div>
+      <h1 style="--i:4" class="stagger hero-names"><span class="js-n1">Shadab</span><span
+          class="hero-amp">&amp;</span><span class="js-n2">Ronak</span></h1>
+      <div style="--i:5" class="stagger rule"></div>
+      <p style="--i:6" class="stagger hero-date js-date-short">26 · 10 · 2026</p>
+      <p style="--i:7" class="stagger hero-venue js-venue">Royal Banquets And Lawns, Pakwara, Uttar Pradesh 244102</p>
+    </div>
+
+    <div class="scroll-cue">Scroll down</div>
+  </header>
+
+  <!-- ============================================================
+       SCRATCH TO REVEAL DATE
+       ============================================================ -->
+  <section class="reveal" id="date-section">
+    <p class="eyebrow">The Date</p>
+    <h2 class="section-title">✦ Scratch to reveal the date ✦</h2>
+
+    <div class="frame">
+      <!-- Luxury corner filigree -->
+      <div class="corner c-tl"><svg viewBox='0 0 44 44' fill='none' stroke='currentColor' stroke-width='1.2'>
+          <path d='M2 42 V10 Q2 2 10 2 H42' />
+          <path d='M8 30 q10 -12 24 -18' />
+          <circle cx='12' cy='26' r='1.8' />
+          <circle cx='18' cy='20' r='1.8' />
+          <circle cx='25' cy='15' r='1.8' />
+          <circle cx='32' cy='11' r='1.8' />
+          <path d='M8 8 q4 -2 6 2 q-4 2 -6 -2Z' />
+        </svg></div>
+      <div class="corner c-tr"><svg viewBox='0 0 44 44' fill='none' stroke='currentColor' stroke-width='1.2'>
+          <path d='M2 42 V10 Q2 2 10 2 H42' />
+          <path d='M8 30 q10 -12 24 -18' />
+          <circle cx='12' cy='26' r='1.8' />
+          <circle cx='18' cy='20' r='1.8' />
+          <circle cx='25' cy='15' r='1.8' />
+          <circle cx='32' cy='11' r='1.8' />
+          <path d='M8 8 q4 -2 6 2 q-4 2 -6 -2Z' />
+        </svg></div>
+      <div class="corner c-bl"><svg viewBox='0 0 44 44' fill='none' stroke='currentColor' stroke-width='1.2'>
+          <path d='M2 42 V10 Q2 2 10 2 H42' />
+          <path d='M8 30 q10 -12 24 -18' />
+          <circle cx='12' cy='26' r='1.8' />
+          <circle cx='18' cy='20' r='1.8' />
+          <circle cx='25' cy='15' r='1.8' />
+          <circle cx='32' cy='11' r='1.8' />
+          <path d='M8 8 q4 -2 6 2 q-4 2 -6 -2Z' />
+        </svg></div>
+      <div class="corner c-br"><svg viewBox='0 0 44 44' fill='none' stroke='currentColor' stroke-width='1.2'>
+          <path d='M2 42 V10 Q2 2 10 2 H42' />
+          <path d='M8 30 q10 -12 24 -18' />
+          <circle cx='12' cy='26' r='1.8' />
+          <circle cx='18' cy='20' r='1.8' />
+          <circle cx='25' cy='15' r='1.8' />
+          <circle cx='32' cy='11' r='1.8' />
+          <path d='M8 8 q4 -2 6 2 q-4 2 -6 -2Z' />
+        </svg></div>
+
+      <div class="scratch-row">
+        <div class="scratch-card">
+          <div class="value">
+            <b class="js-day">26</b>
+            <span>DAY</span>
+          </div>
+          <canvas aria-label="Scratch card for day"></canvas>
+        </div>
+
+        <div class="scratch-card">
+          <div class="value">
+            <b class="js-month">October</b>
+            <span>MONTH</span>
+          </div>
+          <canvas aria-label="Scratch card for month"></canvas>
+        </div>
+
+        <div class="scratch-card">
+          <div class="value">
+            <b class="js-year">2026</b>
+            <span>YEAR</span>
+          </div>
+          <canvas aria-label="Scratch card for year"></canvas>
+        </div>
+      </div>
+
+      <p class="scratch-note">Rub the gold foil with your finger</p>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       BLESSINGS & INVITATION ARCH CARD (Matching Reference Video)
+       ============================================================ -->
+  <section class="reveal" id="blessing-section">
+    <div class="arch">
+      <!-- Islamic Arch Corner filigree -->
+      <div class="corner c-tl"><svg viewBox='0 0 44 44' fill='none' stroke='currentColor' stroke-width='1.2'>
+          <path d='M2 42 V10 Q2 2 10 2 H42' />
+          <path d='M8 30 q10 -12 24 -18' />
+          <circle cx='12' cy='26' r='1.8' />
+          <circle cx='18' cy='20' r='1.8' />
+          <circle cx='25' cy='15' r='1.8' />
+          <circle cx='32' cy='11' r='1.8' />
+          <path d='M8 8 q4 -2 6 2 q-4 2 -6 -2Z' />
+        </svg></div>
+      <div class="corner c-tr"><svg viewBox='0 0 44 44' fill='none' stroke='currentColor' stroke-width='1.2'>
+          <path d='M2 42 V10 Q2 2 10 2 H42' />
+          <path d='M8 30 q10 -12 24 -18' />
+          <circle cx='12' cy='26' r='1.8' />
+          <circle cx='18' cy='20' r='1.8' />
+          <circle cx='25' cy='15' r='1.8' />
+          <circle cx='32' cy='11' r='1.8' />
+          <path d='M8 8 q4 -2 6 2 q-4 2 -6 -2Z' />
+        </svg></div>
+      <div class="corner c-bl"><svg viewBox='0 0 44 44' fill='none' stroke='currentColor' stroke-width='1.2'>
+          <path d='M2 42 V10 Q2 2 10 2 H42' />
+          <path d='M8 30 q10 -12 24 -18' />
+          <circle cx='12' cy='26' r='1.8' />
+          <circle cx='18' cy='20' r='1.8' />
+          <circle cx='25' cy='15' r='1.8' />
+          <circle cx='32' cy='11' r='1.8' />
+          <path d='M8 8 q4 -2 6 2 q-4 2 -6 -2Z' />
+        </svg></div>
+      <div class="corner c-br"><svg viewBox='0 0 44 44' fill='none' stroke='currentColor' stroke-width='1.2'>
+          <path d='M2 42 V10 Q2 2 10 2 H42' />
+          <path d='M8 30 q10 -12 24 -18' />
+          <circle cx='12' cy='26' r='1.8' />
+          <circle cx='18' cy='20' r='1.8' />
+          <circle cx='25' cy='15' r='1.8' />
+          <circle cx='32' cy='11' r='1.8' />
+          <path d='M8 8 q4 -2 6 2 q-4 2 -6 -2Z' />
+        </svg></div>
+
+      <div style="--i:0" class="stagger hero-bism">﷽</div>
+      <p style="--i:1" class="stagger arch-invited">YOU ARE INVITED TO THE</p>
+      <h3 style="--i:2" class="stagger arch-ceremony">Nikkah Ceremony</h3>
+      <p style="--i:3" class="stagger arch-of">OF</p>
+
+      <div style="--i:4" class="stagger arch-name js-n1">Shadab</div>
+      <p style="--i:5" class="stagger arch-parent-title">SON OF MR. Mehandi Hasan</p>
+
+      <p style="--i:6" class="stagger arch-with">WITH</p>
+
+      <div style="--i:7" class="stagger arch-name js-n2">Ronak</div>
+      <p style="--i:8" class="stagger arch-parent-title">DAUGHTER OF MR. Gulfam</p>
+
+      <div style="--i:9" class="stagger rule"></div>
+
+      <div style="--i:10" class="stagger hero-couple-wrap">
+        <img class="hero-couple" src="img/couple-pearl.png" alt="Shadab and Ronak">
+      </div>
+
+      <h4 style="--i:11" class="stagger arch-dear">Dear Friends and Family</h4>
+      <p style="--i:12" class="stagger hero-msg js-msg">
+        Join us for an evening of love, laughter, duas and unforgettable memories as we begin our forever.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       COUNTDOWN SECTION
+       ============================================================ -->
+  <section id="countdown-section" class="reveal">
+    <p class="eyebrow">The celebration begins in</p>
+
+    <div class="frame">
+      <div class="corner c-tl"><svg viewBox='0 0 44 44' fill='none' stroke='currentColor' stroke-width='1.2'>
+          <path d='M2 42 V10 Q2 2 10 2 H42' />
+          <path d='M8 30 q10 -12 24 -18' />
+          <circle cx='12' cy='26' r='1.8' />
+          <circle cx='18' cy='20' r='1.8' />
+          <circle cx='25' cy='15' r='1.8' />
+          <circle cx='32' cy='11' r='1.8' />
+          <path d='M8 8 q4 -2 6 2 q-4 2 -6 -2Z' />
+        </svg></div>
+      <div class="corner c-tr"><svg viewBox='0 0 44 44' fill='none' stroke='currentColor' stroke-width='1.2'>
+          <path d='M2 42 V10 Q2 2 10 2 H42' />
+          <path d='M8 30 q10 -12 24 -18' />
+          <circle cx='12' cy='26' r='1.8' />
+          <circle cx='18' cy='20' r='1.8' />
+          <circle cx='25' cy='15' r='1.8' />
+          <circle cx='32' cy='11' r='1.8' />
+          <path d='M8 8 q4 -2 6 2 q-4 2 -6 -2Z' />
+        </svg></div>
+      <div class="corner c-bl"><svg viewBox='0 0 44 44' fill='none' stroke='currentColor' stroke-width='1.2'>
+          <path d='M2 42 V10 Q2 2 10 2 H42' />
+          <path d='M8 30 q10 -12 24 -18' />
+          <circle cx='12' cy='26' r='1.8' />
+          <circle cx='18' cy='20' r='1.8' />
+          <circle cx='25' cy='15' r='1.8' />
+          <circle cx='32' cy='11' r='1.8' />
+          <path d='M8 8 q4 -2 6 2 q-4 2 -6 -2Z' />
+        </svg></div>
+      <div class="corner c-br"><svg viewBox='0 0 44 44' fill='none' stroke='currentColor' stroke-width='1.2'>
+          <path d='M2 42 V10 Q2 2 10 2 H42' />
+          <path d='M8 30 q10 -12 24 -18' />
+          <circle cx='12' cy='26' r='1.8' />
+          <circle cx='18' cy='20' r='1.8' />
+          <circle cx='25' cy='15' r='1.8' />
+          <circle cx='32' cy='11' r='1.8' />
+          <path d='M8 8 q4 -2 6 2 q-4 2 -6 -2Z' />
+        </svg></div>
+
+      <div class="count-grid">
+        <div class="count-cell">
+          <div class="count-num" id="cd-d">–</div>
+          <div class="count-label">DAYS</div>
+        </div>
+        <div class="count-sep">:</div>
+        <div class="count-cell">
+          <div class="count-num" id="cd-h">–</div>
+          <div class="count-label">HOURS</div>
+        </div>
+        <div class="count-sep">:</div>
+        <div class="count-cell">
+          <div class="count-num" id="cd-m">–</div>
+          <div class="count-label">MINUTES</div>
+        </div>
+        <div class="count-sep">:</div>
+        <div class="count-cell">
+          <div class="count-num" id="cd-s">–</div>
+          <div class="count-label">SECONDS</div>
+        </div>
+      </div>
+
+      <div class="rule"></div>
+      <p class="count-date-full js-date-long">Monday, 26 October 2026 · 9:00 PM</p>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       WEDDING TIMELINE
+       ============================================================ -->
+  <section class="reveal" id="timeline-section">
+    <p class="eyebrow">Order of the day</p>
+    <h2 class="section-title">Wedding Timeline</h2>
+
+    <div class="frame">
+      <div class="corner c-tl"><svg viewBox='0 0 44 44' fill='none' stroke='currentColor' stroke-width='1.2'>
+          <path d='M2 42 V10 Q2 2 10 2 H42' />
+          <path d='M8 30 q10 -12 24 -18' />
+          <circle cx='12' cy='26' r='1.8' />
+          <circle cx='18' cy='20' r='1.8' />
+          <circle cx='25' cy='15' r='1.8' />
+          <circle cx='32' cy='11' r='1.8' />
+          <path d='M8 8 q4 -2 6 2 q-4 2 -6 -2Z' />
+        </svg></div>
+      <div class="corner c-tr"><svg viewBox='0 0 44 44' fill='none' stroke='currentColor' stroke-width='1.2'>
+          <path d='M2 42 V10 Q2 2 10 2 H42' />
+          <path d='M8 30 q10 -12 24 -18' />
+          <circle cx='12' cy='26' r='1.8' />
+          <circle cx='18' cy='20' r='1.8' />
+          <circle cx='25' cy='15' r='1.8' />
+          <circle cx='32' cy='11' r='1.8' />
+          <path d='M8 8 q4 -2 6 2 q-4 2 -6 -2Z' />
+        </svg></div>
+      <div class="corner c-bl"><svg viewBox='0 0 44 44' fill='none' stroke='currentColor' stroke-width='1.2'>
+          <path d='M2 42 V10 Q2 2 10 2 H42' />
+          <path d='M8 30 q10 -12 24 -18' />
+          <circle cx='12' cy='26' r='1.8' />
+          <circle cx='18' cy='20' r='1.8' />
+          <circle cx='25' cy='15' r='1.8' />
+          <circle cx='32' cy='11' r='1.8' />
+          <path d='M8 8 q4 -2 6 2 q-4 2 -6 -2Z' />
+        </svg></div>
+      <div class="corner c-br"><svg viewBox='0 0 44 44' fill='none' stroke='currentColor' stroke-width='1.2'>
+          <path d='M2 42 V10 Q2 2 10 2 H42' />
+          <path d='M8 30 q10 -12 24 -18' />
+          <circle cx='12' cy='26' r='1.8' />
+          <circle cx='18' cy='20' r='1.8' />
+          <circle cx='25' cy='15' r='1.8' />
+          <circle cx='32' cy='11' r='1.8' />
+          <path d='M8 8 q4 -2 6 2 q-4 2 -6 -2Z' />
+        </svg></div>
+
+      <div class="timeline">
+        <div class="timeline-marker"></div>
+
+        <!-- 6:00 PM Guest Arrival -->
+        <div style="--i:0" class="tl-item">
+          <div class="tl-time">7:00 PM</div>
+          <div class="tl-badge" title="Barat">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M4 18h16" />
+              <path d="M6 18v-5l3-3 3 3v5" />
+              <path d="M12 13l3-4 4 2v7" />
+              <circle cx="8" cy="19" r="1" />
+              <circle cx="17" cy="19" r="1" />
+            </svg>
+
+          </div>
+          <div class="tl-event">Barat</div>
+        </div>
+
+        <!-- Dinner -->
+        <div style="--i:0" class="tl-item">
+          <div class="tl-time">8:00 PM</div>
+          <div class="tl-badge" title="Dinner">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round">
+              <circle cx="12" cy="12" r="7" />
+              <circle cx="12" cy="12" r="4" />
+              <path d="M3 5v14" />
+              <path d="M5 5v6" />
+              <path d="M7 5v6" />
+              <path d="M5 11v8" />
+              <path d="M21 5v14" />
+              <path d="M21 5c-3 2-3 5 0 7" />
+            </svg>
+
+          </div>
+          <div class="tl-event">Dinner</div>
+        </div>
+
+        <!-- 6:30 PM Nikkah Ceremony -->
+        <div style="--i:1" class="tl-item">
+          <div class="tl-time">9:00 PM</div>
+          <div class="tl-badge" title="Nikkah Ceremony">
+            <svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round'>
+              <path d='M15 4a8 8 0 1 0 0 16 7 7 0 1 1 0-16Z' />
+            </svg>
+          </div>
+          <div class="tl-event">Nikkah Ceremony</div>
+        </div>
+
+        <!-- 10:00 PM Farewell -->
+        <div style="--i:4" class="tl-item">
+          <div class="tl-time">10:00 PM</div>
+          <div class="tl-badge" title="Farewell">
+            <svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round'
+              stroke-linejoin='round'>
+              <path d='M3 15v-3l3-4h12l3 4v3' />
+              <path d='M3 15h18M5 15v2M19 15v2' />
+              <circle cx='7' cy='15' r='1.5' />
+              <circle cx='17' cy='15' r='1.5' />
+            </svg>
+          </div>
+          <div class="tl-event">Farewell</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       VENUE & MAP
+       ============================================================ -->
+  <section class="reveal" id="venue-section">
+    <p class="eyebrow">Where to find us</p>
+    <h2 class="section-title">The Venue</h2>
+    <p class="address">
+      <span class="js-venue">Royal Banquets And Lawns</span><br>
+      <span class="js-addr">Pakwara, Uttar Pradesh 244102</span>
+    </p>
+
+    <div class="map-frame">
+      <div class="corner c-tl"><svg viewBox='0 0 44 44' fill='none' stroke='currentColor' stroke-width='1.2'>
+          <path d='M2 42 V10 Q2 2 10 2 H42' />
+          <path d='M8 30 q10 -12 24 -18' />
+          <circle cx='12' cy='26' r='1.8' />
+          <circle cx='18' cy='20' r='1.8' />
+          <circle cx='25' cy='15' r='1.8' />
+          <circle cx='32' cy='11' r='1.8' />
+          <path d='M8 8 q4 -2 6 2 q-4 2 -6 -2Z' />
+        </svg></div>
+      <div class="corner c-tr"><svg viewBox='0 0 44 44' fill='none' stroke='currentColor' stroke-width='1.2'>
+          <path d='M2 42 V10 Q2 2 10 2 H42' />
+          <path d='M8 30 q10 -12 24 -18' />
+          <circle cx='12' cy='26' r='1.8' />
+          <circle cx='18' cy='20' r='1.8' />
+          <circle cx='25' cy='15' r='1.8' />
+          <circle cx='32' cy='11' r='1.8' />
+          <path d='M8 8 q4 -2 6 2 q-4 2 -6 -2Z' />
+        </svg></div>
+      <div class="corner c-bl"><svg viewBox='0 0 44 44' fill='none' stroke='currentColor' stroke-width='1.2'>
+          <path d='M2 42 V10 Q2 2 10 2 H42' />
+          <path d='M8 30 q10 -12 24 -18' />
+          <circle cx='12' cy='26' r='1.8' />
+          <circle cx='18' cy='20' r='1.8' />
+          <circle cx='25' cy='15' r='1.8' />
+          <circle cx='32' cy='11' r='1.8' />
+          <path d='M8 8 q4 -2 6 2 q-4 2 -6 -2Z' />
+        </svg></div>
+      <div class="corner c-br"><svg viewBox='0 0 44 44' fill='none' stroke='currentColor' stroke-width='1.2'>
+          <path d='M2 42 V10 Q2 2 10 2 H42' />
+          <path d='M8 30 q10 -12 24 -18' />
+          <circle cx='12' cy='26' r='1.8' />
+          <circle cx='18' cy='20' r='1.8' />
+          <circle cx='25' cy='15' r='1.8' />
+          <circle cx='32' cy='11' r='1.8' />
+          <path d='M8 8 q4 -2 6 2 q-4 2 -6 -2Z' />
+        </svg></div>
+
+      <iframe loading="lazy" title="Google Map to venue" id="map-embed"
+        src="https://www.google.com/maps?q=28.8203154,78.6701513&output=embed" width="100%" height="400"
+        style="border:0;" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"> </iframe>
+    </div>
+
+    <a class="btn" target="_blank" rel="noopener noreferrer" id="map-link"
+      href="https://maps.app.goo.gl/dMpwcnRGvq4BMTXb8">
+      Get directions
+    </a>
+  </section>
+
+  <!-- ============================================================
+       DRESS CODE & ATTIRE
+       ============================================================ -->
+  <section class="reveal" id="attire-section">
+    <div class="frame">
+      <div class="corner c-tl"><svg viewBox='0 0 44 44' fill='none' stroke='currentColor' stroke-width='1.2'>
+          <path d='M2 42 V10 Q2 2 10 2 H42' />
+          <path d='M8 30 q10 -12 24 -18' />
+          <circle cx='12' cy='26' r='1.8' />
+          <circle cx='18' cy='20' r='1.8' />
+          <circle cx='25' cy='15' r='1.8' />
+          <circle cx='32' cy='11' r='1.8' />
+          <path d='M8 8 q4 -2 6 2 q-4 2 -6 -2Z' />
+        </svg></div>
+      <div class="corner c-tr"><svg viewBox='0 0 44 44' fill='none' stroke='currentColor' stroke-width='1.2'>
+          <path d='M2 42 V10 Q2 2 10 2 H42' />
+          <path d='M8 30 q10 -12 24 -18' />
+          <circle cx='12' cy='26' r='1.8' />
+          <circle cx='18' cy='20' r='1.8' />
+          <circle cx='25' cy='15' r='1.8' />
+          <circle cx='32' cy='11' r='1.8' />
+          <path d='M8 8 q4 -2 6 2 q-4 2 -6 -2Z' />
+        </svg></div>
+      <div class="corner c-bl"><svg viewBox='0 0 44 44' fill='none' stroke='currentColor' stroke-width='1.2'>
+          <path d='M2 42 V10 Q2 2 10 2 H42' />
+          <path d='M8 30 q10 -12 24 -18' />
+          <circle cx='12' cy='26' r='1.8' />
+          <circle cx='18' cy='20' r='1.8' />
+          <circle cx='25' cy='15' r='1.8' />
+          <circle cx='32' cy='11' r='1.8' />
+          <path d='M8 8 q4 -2 6 2 q-4 2 -6 -2Z' />
+        </svg></div>
+      <div class="corner c-br"><svg viewBox='0 0 44 44' fill='none' stroke='currentColor' stroke-width='1.2'>
+          <path d='M2 42 V10 Q2 2 10 2 H42' />
+          <path d='M8 30 q10 -12 24 -18' />
+          <circle cx='12' cy='26' r='1.8' />
+          <circle cx='18' cy='20' r='1.8' />
+          <circle cx='25' cy='15' r='1.8' />
+          <circle cx='32' cy='11' r='1.8' />
+          <path d='M8 8 q4 -2 6 2 q-4 2 -6 -2Z' />
+        </svg></div>
+
+      <div class="rule"></div>
+      <p class="gifting-note">
+        Your presence is the greatest gift of all. Should you wish to honour us further, a contribution towards our
+        future together would be warmly appreciated.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       RSVP SECTION
+       ============================================================ -->
+  <section class="reveal" id="rsvp-section">
+    <p class="eyebrow">Kindly respond</p>
+    <h2 class="section-title">Confirm Your Attendance</h2>
+
+    <div class="form" id="rsvp-form">
+      <div class="corner c-tl"><svg viewBox='0 0 44 44' fill='none' stroke='currentColor' stroke-width='1.2'>
+          <path d='M2 42 V10 Q2 2 10 2 H42' />
+          <path d='M8 30 q10 -12 24 -18' />
+          <circle cx='12' cy='26' r='1.8' />
+          <circle cx='18' cy='20' r='1.8' />
+          <circle cx='25' cy='15' r='1.8' />
+          <circle cx='32' cy='11' r='1.8' />
+          <path d='M8 8 q4 -2 6 2 q-4 2 -6 -2Z' />
+        </svg></div>
+      <div class="corner c-tr"><svg viewBox='0 0 44 44' fill='none' stroke='currentColor' stroke-width='1.2'>
+          <path d='M2 42 V10 Q2 2 10 2 H42' />
+          <path d='M8 30 q10 -12 24 -18' />
+          <circle cx='12' cy='26' r='1.8' />
+          <circle cx='18' cy='20' r='1.8' />
+          <circle cx='25' cy='15' r='1.8' />
+          <circle cx='32' cy='11' r='1.8' />
+          <path d='M8 8 q4 -2 6 2 q-4 2 -6 -2Z' />
+        </svg></div>
+      <div class="corner c-bl"><svg viewBox='0 0 44 44' fill='none' stroke='currentColor' stroke-width='1.2'>
+          <path d='M2 42 V10 Q2 2 10 2 H42' />
+          <path d='M8 30 q10 -12 24 -18' />
+          <circle cx='12' cy='26' r='1.8' />
+          <circle cx='18' cy='20' r='1.8' />
+          <circle cx='25' cy='15' r='1.8' />
+          <circle cx='32' cy='11' r='1.8' />
+          <path d='M8 8 q4 -2 6 2 q-4 2 -6 -2Z' />
+        </svg></div>
+      <div class="corner c-br"><svg viewBox='0 0 44 44' fill='none' stroke='currentColor' stroke-width='1.2'>
+          <path d='M2 42 V10 Q2 2 10 2 H42' />
+          <path d='M8 30 q10 -12 24 -18' />
+          <circle cx='12' cy='26' r='1.8' />
+          <circle cx='18' cy='20' r='1.8' />
+          <circle cx='25' cy='15' r='1.8' />
+          <circle cx='32' cy='11' r='1.8' />
+          <path d='M8 8 q4 -2 6 2 q-4 2 -6 -2Z' />
+        </svg></div>
+
+      <div class="field">
+        <label for="f-name">Full name</label>
+        <input id="f-name" type="text" autocomplete="name" placeholder="Your full name">
+      </div>
+
+      <!-- <div class="field">
+        <label for="f-guests">Number of guests</label>
+        <select id="f-guests">
+          <option value="1">1 Guest</option>
+          <option value="2">2 Guests</option>
+          <option value="3">3 Guests</option>
+          <option value="4">4 Guests</option>
+        </select>
+      </div> -->
+
+      <div class="field">
+        <label for="f-attend">Will you attend?</label>
+        <select id="f-attend">
+          <option value="Joyfully accept">Joyfully accept</option>
+          <option value="Regretfully decline">Regretfully decline</option>
+        </select>
+      </div>
+
+      <button type="button" class="btn gold" id="rsvp-send">
+        <!-- WhatsApp Icon -->
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.53 7.34C9.36 7.34 9.09 7.4 8.87 7.65C8.64 7.9 8 8.5 8 9.72C8 10.94 8.89 12.12 9.01 12.28C9.14 12.45 10.74 14.92 13.2 15.98C13.79 16.23 14.24 16.38 14.6 16.5C15.19 16.68 15.73 16.66 16.16 16.6C16.64 16.53 17.63 16 17.84 15.42C18.04 14.83 18.04 14.33 17.98 14.23C17.92 14.12 17.76 14.06 17.5 13.93C17.25 13.8 16.03 13.2 15.8 13.12C15.58 13.03 15.41 12.99 15.25 13.24C15.08 13.49 14.61 14.06 14.47 14.23C14.33 14.39 14.19 14.41 13.94 14.28C13.69 14.16 12.89 13.9 11.94 13.05C11.2 12.39 10.7 11.58 10.55 11.33C10.41 11.08 10.54 10.94 10.66 10.82C10.77 10.71 10.91 10.53 11.04 10.38C11.17 10.23 11.21 10.12 11.29 9.96C11.38 9.79 11.34 9.65 11.27 9.52C11.21 9.4 10.72 8.19 10.51 7.7C10.31 7.22 10.1 7.29 9.95 7.28C9.8 7.28 9.68 7.34 9.53 7.34Z" />
+        </svg>
+        Send RSVP
+      </button>
+    </div>
+
+    <div id="rsvp-done">
+      Thank you — we can't wait to celebrate with you. ✦
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer>
+    <div class="script"><span class="js-n1">Shadab</span> &amp; <span class="js-n2">Ronak</span></div>
+    <p>With love · <span class="js-date-short">26 · 10 · 2026</span></p>
+  </footer>
+
+  <!-- ============================================================
+       FLOATING MUSIC TOGGLE BUTTON
+       ============================================================ -->
+  <button id="music-btn" aria-label="Toggle background music">
+    <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round">
+      <line class="bar" x1="7" y1="19" x2="7" y2="9" />
+      <line class="bar" x1="12" y1="19" x2="12" y2="5" />
+      <line class="bar" x1="17" y1="19" x2="17" y2="11" />
+    </svg>
+  </button>
+
+  <!-- Main Scripts -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
